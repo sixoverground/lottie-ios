@@ -15,7 +15,7 @@ public class AnimationSession: NSObject {
     /// Hold a custom session
     var session: URLSession!
 
-    static let shared: AnimationSession = {
+    public static let shared: AnimationSession = {
         let instance = AnimationSession()
         instance.session = URLSession(configuration: URLSessionConfiguration.default, delegate: instance.sessionDelegate, delegateQueue: nil)
         return instance
