@@ -11,7 +11,7 @@ import Foundation
 public class AnimationSessionDelegate: NSObject {
     
     /// List of trusted host strings
-    var trustedHosts: [String] = []
+    public var trustedHosts: [String] = []
 
 }
 

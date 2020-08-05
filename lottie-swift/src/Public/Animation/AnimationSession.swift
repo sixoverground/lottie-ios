@@ -11,7 +11,7 @@ import Foundation
 public class AnimationSession: NSObject {
     
     /// Delegate to handle challenges
-    var sessionDelegate = AnimationSessionDelegate()
+    public var sessionDelegate = AnimationSessionDelegate()
     /// Hold a custom session
     var session: URLSession!
 
