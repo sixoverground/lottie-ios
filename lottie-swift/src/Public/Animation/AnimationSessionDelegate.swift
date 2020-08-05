@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AnimationSessionDelegate: NSObject {
+public class AnimationSessionDelegate: NSObject {
     
     /// List of trusted host strings
     var trustedHosts: [String] = []
@@ -18,7 +18,7 @@ class AnimationSessionDelegate: NSObject {
 extension AnimationSessionDelegate: URLSessionDelegate {
 
     /// If challenged by a trusted host, allow credential
-    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
         if challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust {
             if trustedHosts.contains(challenge.protectionSpace.host) {
                 let credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
