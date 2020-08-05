@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AnimationSession: NSObject {
+public class AnimationSession: NSObject {
     
     /// Delegate to handle challenges
     var sessionDelegate = AnimationSessionDelegate()
