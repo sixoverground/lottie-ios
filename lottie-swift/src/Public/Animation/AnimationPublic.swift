@@ -99,7 +99,7 @@ public extension Animation {
     if let animationCache = animationCache, let animation = animationCache.animation(forKey: url.absoluteString) {
       closure(animation)
     } else {
-      let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let task = AnimationSession.shared.session.dataTask(with: url) { (data, response, error) in
         guard error == nil, let jsonData = data else {
           DispatchQueue.main.async {
             closure(nil)
