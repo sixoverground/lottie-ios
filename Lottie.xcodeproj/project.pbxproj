@@ -15,6 +15,8 @@
 		25D5437522307C8C00ED90FA /* CompatibleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D5436E22306E2D00ED90FA /* CompatibleAnimationView.swift */; };
 		37A137F42265AF5B00E371E5 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E8724220B78BF007CD915 /* TextCompositionLayer.swift */; };
 		37A137F52265AF5C00E371E5 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486E8724220B78BF007CD915 /* TextCompositionLayer.swift */; };
+		42F4C80B24DB01BD0033595C /* AnimationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4C80A24DB01BD0033595C /* AnimationSession.swift */; };
+		42F4C80D24DB04D80033595C /* AnimationSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4C80C24DB04D80033595C /* AnimationSessionDelegate.swift */; };
 		4866744122249C4E00258C00 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866744022249C4E00258C00 /* TextAnimatorNode.swift */; };
 		4866744222249C4E00258C00 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866744022249C4E00258C00 /* TextAnimatorNode.swift */; };
 		4866744322249C4E00258C00 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866744022249C4E00258C00 /* TextAnimatorNode.swift */; };
@@ -647,6 +649,8 @@
 /* Begin PBXFileReference section */
 		25D5436E22306E2D00ED90FA /* CompatibleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibleAnimationView.swift; sourceTree = "<group>"; };
 		25D543702230787900ED90FA /* CompatibleAnimationKeypath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibleAnimationKeypath.swift; sourceTree = "<group>"; };
+		42F4C80A24DB01BD0033595C /* AnimationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSession.swift; sourceTree = "<group>"; };
+		42F4C80C24DB04D80033595C /* AnimationSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSessionDelegate.swift; sourceTree = "<group>"; };
 		4866744022249C4E00258C00 /* TextAnimatorNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAnimatorNode.swift; sourceTree = "<group>"; };
 		486E8395220A3038007CD915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		486E83B2220A317C007CD915 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -911,6 +915,8 @@
 				486E8702220B78BF007CD915 /* AnimationViewInitializers.swift */,
 				486E8703220B78BF007CD915 /* AnimationView.swift */,
 				486E8704220B78BF007CD915 /* AnimationPublic.swift */,
+				42F4C80A24DB01BD0033595C /* AnimationSession.swift */,
+				42F4C80C24DB04D80033595C /* AnimationSessionDelegate.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -1564,6 +1570,7 @@
 				486E87B2220B78D1007CD915 /* AnimationKeypath.swift in Sources */,
 				486E87B3220B78D1007CD915 /* AnyValueProvider.swift in Sources */,
 				486E87B4220B78D1007CD915 /* ColorValueProvider.swift in Sources */,
+				42F4C80B24DB01BD0033595C /* AnimationSession.swift in Sources */,
 				486E87B5220B78D1007CD915 /* FloatValueProvider.swift in Sources */,
 				486E87B6220B78D1007CD915 /* SizeValueProvider.swift in Sources */,
 				486E87B7220B78D1007CD915 /* PointValueProvider.swift in Sources */,
@@ -1596,6 +1603,7 @@
 				486E87D3220B78D1007CD915 /* GradientFillNode.swift in Sources */,
 				486E87D4220B78D1007CD915 /* StrokeNode.swift in Sources */,
 				E654753922AAA9AD00FE590F /* LayerTextProvider.swift in Sources */,
+				42F4C80D24DB04D80033595C /* AnimationSessionDelegate.swift in Sources */,
 				486E87D5220B78D1007CD915 /* FillNode.swift in Sources */,
 				486E87D6220B78D1007CD915 /* GradientStrokeNode.swift in Sources */,
 				486E87D7220B78D1007CD915 /* ValueContainer.swift in Sources */,
